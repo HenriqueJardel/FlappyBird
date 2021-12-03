@@ -260,6 +260,15 @@ window.onload = function() {
                 ctx.strokeText(this.atual,310,208);
                 ctx.fillText(this.melhor,310,250);
                 ctx.strokeText(this.melhor,310,250);
+
+                if(this.atual >= 0 && this.atual < 5)
+                ctx.drawImage(sprite,310,112,50,46,160,196,50,46);
+                if(this.atual >= 5 && this.atual < 10)
+                ctx.drawImage(sprite,356,112,50,46,160,196,50,46);
+                if(this.atual >= 20 && this.atual < 30)
+                ctx.drawImage(sprite,310,158,50,46,160,196,50,46);
+                if(this.atual >= 30)
+                ctx.drawImage(sprite,356,158,50,46,160,196,50,46);
             }
         },
 
